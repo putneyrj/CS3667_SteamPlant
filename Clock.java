@@ -7,7 +7,7 @@ public class Clock implements Runnable
 
     public Clock()
     {
-        SP.getSteamPlant();
+        SP = SteamPlant.getSteamPlant();
     }
 
     public void run()
@@ -22,7 +22,7 @@ public class Clock implements Runnable
                 double p = rand.nextDouble();
                 p *= 2;
                 p -= 1;
-                SP.setCurrentPressure(p);
+                SP.changeCurrentPressure(p);
             }
             catch(InterruptedException e)
             {

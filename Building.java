@@ -10,7 +10,7 @@ public class Building implements Runnable
 
     public Building(int size, int thermostat, int outsideTemp)
     {
-        SP.getSteamPlant();
+        SP = SteamPlant.getSteamPlant();
         this.size = size;
         this.thermostat = thermostat;
         this.outsideTemp = outsideTemp;

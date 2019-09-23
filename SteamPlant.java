@@ -43,7 +43,7 @@ public class SteamPlant
             temp = h;
             heatAvailable -= h;
         }
-        System.out.println("consumeHeat(int " + h + "x 10^3 BTUs): Heat Available = " + heatAvailable +
+        System.out.println("consumeHeat(int " + h + " x 10^3 BTUs): Heat Available = " + heatAvailable +
             ", Current Pressure = " + currentPressure + ", Heat Consumed = " + temp);
         return temp;
     }
