@@ -15,7 +15,11 @@ public class SteamPlant {
  
 	public static SteamPlant getSteamPlant() { //USE double checked locking.
 		if (uniqueInstance == null) {
-			uniqueInstance = new SteamPlant();
+			synchronized(SteamPlant.class){
+                if(uniqueInstance == null) {
+                    uniqueInstance = new SteamPlant();
+                }
+            }
 		}
 		return uniqueInstance;
 	}
