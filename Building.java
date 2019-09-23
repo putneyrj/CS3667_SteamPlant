@@ -1,7 +1,7 @@
 import java.util.concurrent.TimeUnit;
 import java.util.Random;
 
-public class Building
+public class Building implements Runnable
 {
     public SteamPlant SP;
     public int size;
